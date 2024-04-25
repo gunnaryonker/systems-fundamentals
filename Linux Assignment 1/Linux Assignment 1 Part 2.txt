@@ -1,0 +1,1039 @@
+┌──(kali㉿kali)-[~]
+└─$ sudo su
+[sudo] password for kali: 
+┌──(root㉿kali)-[/home/kali]
+└─# pwd
+/home/kali
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/home/kali]
+└─# whoami
+root
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/home/kali]
+└─# cd /etc
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/etc]
+└─# pwd
+/etc
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/etc]
+└─# cd ..  
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# pwd
+/
+                                                                                                                                                                                                                                                                                                                                                                                                                   
+┌──(root㉿kali)-[/]
+└─# cd ../..        
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ls
+0  bin  boot  dev  etc  home  initrd.img  initrd.img.old  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  srv  swapfile  sys  tmp  usr  var  vmlinuz  vmlinuz.old
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ls -l
+total 1048648
+-rw-r--r--   1 root root          0 Aug  8 06:08 0
+lrwxrwxrwx   1 root root          7 Aug  8 06:02 bin -> usr/bin
+drwxr-xr-x   3 root root       4096 Aug  8 06:28 boot
+drwxr-xr-x  17 root root       3200 Sep 13 14:22 dev
+drwxr-xr-x 167 root root      12288 Sep 13 14:10 etc
+drwxr-xr-x   3 root root       4096 Aug  8 06:10 home
+lrwxrwxrwx   1 root root         34 Aug  8 06:28 initrd.img -> boot/initrd.img-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root         34 Aug  8 06:28 initrd.img.old -> boot/initrd.img-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root          7 Aug  8 06:02 lib -> usr/lib
+lrwxrwxrwx   1 root root          9 Aug  8 06:02 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root          9 Aug  8 06:02 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root         10 Aug  8 06:02 libx32 -> usr/libx32
+drwx------   2 root root      16384 Aug  8 06:26 lost+found
+drwxr-xr-x   2 root root       4096 Aug  8 06:02 media
+drwxr-xr-x   2 root root       4096 Aug  8 06:02 mnt
+drwxr-xr-x   3 root root       4096 Aug  8 06:07 opt
+dr-xr-xr-x 220 root root          0 Sep 13 14:10 proc
+drwx------   3 root root       4096 Sep 13 14:43 root
+drwxr-xr-x  31 root root        780 Sep 13 14:11 run
+lrwxrwxrwx   1 root root          8 Aug  8 06:02 sbin -> usr/sbin
+drwxr-xr-x   3 root root       4096 Aug  8 06:08 srv
+-rw-------   1 root root 1073741824 Aug  8 06:27 swapfile
+dr-xr-xr-x  13 root root          0 Sep 13 14:10 sys
+drwxrwxrwt  13 root root       4096 Sep 13 14:41 tmp
+drwxr-xr-x  16 root root       4096 Aug  8 06:05 usr
+drwxr-xr-x  12 root root       4096 Aug  8 06:05 var
+lrwxrwxrwx   1 root root         31 Aug  8 06:28 vmlinuz -> boot/vmlinuz-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root         31 Aug  8 06:28 vmlinuz.old -> boot/vmlinuz-5.18.0-kali5-amd64
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ls -la
+total 1048656
+drwxr-xr-x  18 root root       4096 Aug  8 06:28 .
+drwxr-xr-x  18 root root       4096 Aug  8 06:28 ..
+-rw-r--r--   1 root root          0 Aug  8 06:08 0
+lrwxrwxrwx   1 root root          7 Aug  8 06:02 bin -> usr/bin
+drwxr-xr-x   3 root root       4096 Aug  8 06:28 boot
+drwxr-xr-x  17 root root       3200 Sep 13 14:22 dev
+drwxr-xr-x 167 root root      12288 Sep 13 14:10 etc
+drwxr-xr-x   3 root root       4096 Aug  8 06:10 home
+lrwxrwxrwx   1 root root         34 Aug  8 06:28 initrd.img -> boot/initrd.img-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root         34 Aug  8 06:28 initrd.img.old -> boot/initrd.img-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root          7 Aug  8 06:02 lib -> usr/lib
+lrwxrwxrwx   1 root root          9 Aug  8 06:02 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root          9 Aug  8 06:02 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root         10 Aug  8 06:02 libx32 -> usr/libx32
+drwx------   2 root root      16384 Aug  8 06:26 lost+found
+drwxr-xr-x   2 root root       4096 Aug  8 06:02 media
+drwxr-xr-x   2 root root       4096 Aug  8 06:02 mnt
+drwxr-xr-x   3 root root       4096 Aug  8 06:07 opt
+dr-xr-xr-x 220 root root          0 Sep 13 14:10 proc
+drwx------   3 root root       4096 Sep 13 14:43 root
+drwxr-xr-x  31 root root        780 Sep 13 14:11 run
+lrwxrwxrwx   1 root root          8 Aug  8 06:02 sbin -> usr/sbin
+drwxr-xr-x   3 root root       4096 Aug  8 06:08 srv
+-rw-------   1 root root 1073741824 Aug  8 06:27 swapfile
+dr-xr-xr-x  13 root root          0 Sep 13 14:10 sys
+drwxrwxrwt  13 root root       4096 Sep 13 14:41 tmp
+drwxr-xr-x  16 root root       4096 Aug  8 06:05 usr
+drwxr-xr-x  12 root root       4096 Aug  8 06:05 var
+lrwxrwxrwx   1 root root         31 Aug  8 06:28 vmlinuz -> boot/vmlinuz-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root         31 Aug  8 06:28 vmlinuz.old -> boot/vmlinuz-5.18.0-kali5-amd64
+                                                                                                                                                                                                                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/]
+└─# aircrack-ng --help
+
+  Aircrack-ng 1.6  - (C) 2006-2020 Thomas d'Otreppe
+  https://www.aircrack-ng.org
+
+  usage: aircrack-ng [options] <input file(s)>
+
+  Common options:
+
+      -a <amode> : force attack mode (1/WEP, 2/WPA-PSK)
+      -e <essid> : target selection: network identifier
+      -b <bssid> : target selection: access point's MAC
+      -p <nbcpu> : # of CPU to use  (default: all CPUs)
+      -q         : enable quiet mode (no status output)
+      -C <macs>  : merge the given APs to a virtual one
+      -l <file>  : write key to file. Overwrites file.
+
+  Static WEP cracking options:
+
+      -c         : search alpha-numeric characters only
+      -t         : search binary coded decimal chr only
+      -h         : search the numeric key for Fritz!BOX
+      -d <mask>  : use masking of the key (A1:XX:CF:YY)
+      -m <maddr> : MAC address to filter usable packets
+      -n <nbits> : WEP key length :  64/128/152/256/512
+      -i <index> : WEP key index (1 to 4), default: any
+      -f <fudge> : bruteforce fudge factor,  default: 2
+      -k <korek> : disable one attack method  (1 to 17)
+      -x or -x0  : disable bruteforce for last keybytes
+      -x1        : last keybyte bruteforcing  (default)
+      -x2        : enable last  2 keybytes bruteforcing
+      -X         : disable  bruteforce   multithreading
+      -y         : experimental  single bruteforce mode
+      -K         : use only old KoreK attacks (pre-PTW)
+      -s         : show the key in ASCII while cracking
+      -M <num>   : specify maximum number of IVs to use
+      -D         : WEP decloak, skips broken keystreams
+      -P <num>   : PTW debug:  1: disable Klein, 2: PTW
+      -1         : run only 1 try to crack key with PTW
+      -V         : run in visual inspection mode
+
+  WEP and WPA-PSK cracking options:
+
+      -w <words> : path to wordlist(s) filename(s)
+      -N <file>  : path to new session filename
+      -R <file>  : path to existing session filename
+
+  WPA-PSK options:
+
+      -E <file>  : create EWSA Project file v3
+      -I <str>   : PMKID string (hashcat -m 16800)
+      -j <file>  : create Hashcat v3.6+ file (HCCAPX)
+      -J <file>  : create Hashcat file (HCCAP)
+      -S         : WPA cracking speed test
+      -Z <sec>   : WPA cracking speed test length of
+                   execution.
+      -r <DB>    : path to airolib-ng database
+                   (Cannot be used with -w)
+
+  SIMD selection:
+
+      --simd-list       : Show a list of the available
+                          SIMD architectures, for this
+                          machine.
+      --simd=<option>   : Use specific SIMD architecture.
+
+      <option> may be one of the following, depending on
+      your platform:
+
+                   generic
+                   avx512
+                   avx2
+                   avx
+                   sse2
+                   altivec
+                   power8
+                   asimd
+                   neon
+
+  Other options:
+
+      -u         : Displays # of CPUs & SIMD support
+      --help     : Displays this usage screen
+
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# nmap -h 
+Nmap 7.92 ( https://nmap.org )
+Usage: nmap [Scan Type(s)] [Options] {target specification}
+TARGET SPECIFICATION:
+  Can pass hostnames, IP addresses, networks, etc.
+  Ex: scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
+  -iL <inputfilename>: Input from list of hosts/networks
+  -iR <num hosts>: Choose random targets
+  --exclude <host1[,host2][,host3],...>: Exclude hosts/networks
+  --excludefile <exclude_file>: Exclude list from file
+HOST DISCOVERY:
+  -sL: List Scan - simply list targets to scan
+  -sn: Ping Scan - disable port scan
+  -Pn: Treat all hosts as online -- skip host discovery
+  -PS/PA/PU/PY[portlist]: TCP SYN/ACK, UDP or SCTP discovery to given ports
+  -PE/PP/PM: ICMP echo, timestamp, and netmask request discovery probes
+  -PO[protocol list]: IP Protocol Ping
+  -n/-R: Never do DNS resolution/Always resolve [default: sometimes]
+  --dns-servers <serv1[,serv2],...>: Specify custom DNS servers
+  --system-dns: Use OS's DNS resolver
+  --traceroute: Trace hop path to each host
+SCAN TECHNIQUES:
+  -sS/sT/sA/sW/sM: TCP SYN/Connect()/ACK/Window/Maimon scans
+  -sU: UDP Scan
+  -sN/sF/sX: TCP Null, FIN, and Xmas scans
+  --scanflags <flags>: Customize TCP scan flags
+  -sI <zombie host[:probeport]>: Idle scan
+  -sY/sZ: SCTP INIT/COOKIE-ECHO scans
+  -sO: IP protocol scan
+  -b <FTP relay host>: FTP bounce scan
+PORT SPECIFICATION AND SCAN ORDER:
+  -p <port ranges>: Only scan specified ports
+    Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9
+  --exclude-ports <port ranges>: Exclude the specified ports from scanning
+  -F: Fast mode - Scan fewer ports than the default scan
+  -r: Scan ports consecutively - don't randomize
+  --top-ports <number>: Scan <number> most common ports
+  --port-ratio <ratio>: Scan ports more common than <ratio>
+SERVICE/VERSION DETECTION:
+  -sV: Probe open ports to determine service/version info
+  --version-intensity <level>: Set from 0 (light) to 9 (try all probes)
+  --version-light: Limit to most likely probes (intensity 2)
+  --version-all: Try every single probe (intensity 9)
+  --version-trace: Show detailed version scan activity (for debugging)
+SCRIPT SCAN:
+  -sC: equivalent to --script=default
+  --script=<Lua scripts>: <Lua scripts> is a comma separated list of
+           directories, script-files or script-categories
+  --script-args=<n1=v1,[n2=v2,...]>: provide arguments to scripts
+  --script-args-file=filename: provide NSE script args in a file
+  --script-trace: Show all data sent and received
+  --script-updatedb: Update the script database.
+  --script-help=<Lua scripts>: Show help about scripts.
+           <Lua scripts> is a comma-separated list of script-files or
+           script-categories.
+OS DETECTION:
+  -O: Enable OS detection
+  --osscan-limit: Limit OS detection to promising targets
+  --osscan-guess: Guess OS more aggressively
+TIMING AND PERFORMANCE:
+  Options which take <time> are in seconds, or append 'ms' (milliseconds),
+  's' (seconds), 'm' (minutes), or 'h' (hours) to the value (e.g. 30m).
+  -T<0-5>: Set timing template (higher is faster)
+  --min-hostgroup/max-hostgroup <size>: Parallel host scan group sizes
+  --min-parallelism/max-parallelism <numprobes>: Probe parallelization
+  --min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout <time>: Specifies
+      probe round trip time.
+  --max-retries <tries>: Caps number of port scan probe retransmissions.
+  --host-timeout <time>: Give up on target after this long
+  --scan-delay/--max-scan-delay <time>: Adjust delay between probes
+  --min-rate <number>: Send packets no slower than <number> per second
+  --max-rate <number>: Send packets no faster than <number> per second
+FIREWALL/IDS EVASION AND SPOOFING:
+  -f; --mtu <val>: fragment packets (optionally w/given MTU)
+  -D <decoy1,decoy2[,ME],...>: Cloak a scan with decoys
+  -S <IP_Address>: Spoof source address
+  -e <iface>: Use specified interface
+  -g/--source-port <portnum>: Use given port number
+  --proxies <url1,[url2],...>: Relay connections through HTTP/SOCKS4 proxies
+  --data <hex string>: Append a custom payload to sent packets
+  --data-string <string>: Append a custom ASCII string to sent packets
+  --data-length <num>: Append random data to sent packets
+  --ip-options <options>: Send packets with specified ip options
+  --ttl <val>: Set IP time-to-live field
+  --spoof-mac <mac address/prefix/vendor name>: Spoof your MAC address
+  --badsum: Send packets with a bogus TCP/UDP/SCTP checksum
+OUTPUT:
+  -oN/-oX/-oS/-oG <file>: Output scan in normal, XML, s|<rIpt kIddi3,
+     and Grepable format, respectively, to the given filename.
+  -oA <basename>: Output in the three major formats at once
+  -v: Increase verbosity level (use -vv or more for greater effect)
+  -d: Increase debugging level (use -dd or more for greater effect)
+  --reason: Display the reason a port is in a particular state
+  --open: Only show open (or possibly open) ports
+  --packet-trace: Show all packets sent and received
+  --iflist: Print host interfaces and routes (for debugging)
+  --append-output: Append to rather than clobber specified output files
+  --resume <filename>: Resume an aborted scan
+  --noninteractive: Disable runtime interactions via keyboard
+  --stylesheet <path/URL>: XSL stylesheet to transform XML output to HTML
+  --webxml: Reference stylesheet from Nmap.Org for more portable XML
+  --no-stylesheet: Prevent associating of XSL stylesheet w/XML output
+MISC:
+  -6: Enable IPv6 scanning
+  -A: Enable OS detection, version detection, script scanning, and traceroute
+  --datadir <dirname>: Specify custom Nmap data file location
+  --send-eth/--send-ip: Send using raw ethernet frames or IP packets
+  --privileged: Assume that the user is fully privileged
+  --unprivileged: Assume the user lacks raw socket privileges
+  -V: Print version number
+  -h: Print this help summary page.
+EXAMPLES:
+  nmap -v -A scanme.nmap.org
+  nmap -v -sn 192.168.0.0/16 10.0.0.0/8
+  nmap -v -iR 10000 -Pn -p 80
+SEE THE MAN PAGE (https://nmap.org/book/man.html) FOR MORE OPTIONS AND EXAMPLES
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# man aircrack-ng
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# locate aircrack-ng
+/usr/bin/aircrack-ng
+/usr/include/aircrack-ng
+/usr/include/aircrack-ng/adt
+/usr/include/aircrack-ng/aircrack-ng.h
+/usr/include/aircrack-ng/ce-wep
+/usr/include/aircrack-ng/ce-wpa
+/usr/include/aircrack-ng/compat.h
+/usr/include/aircrack-ng/cowpatty
+/usr/include/aircrack-ng/cpu
+/usr/include/aircrack-ng/crypto
+/usr/include/aircrack-ng/defs.h
+/usr/include/aircrack-ng/osdep
+/usr/include/aircrack-ng/ptw
+/usr/include/aircrack-ng/support
+/usr/include/aircrack-ng/third-party
+/usr/include/aircrack-ng/tui
+/usr/include/aircrack-ng/utf8
+/usr/include/aircrack-ng/version.h
+/usr/include/aircrack-ng/adt/avl_tree.h
+/usr/include/aircrack-ng/adt/circular_buffer.h
+/usr/include/aircrack-ng/adt/circular_queue.h
+/usr/include/aircrack-ng/ce-wep/uniqueiv.h
+/usr/include/aircrack-ng/ce-wpa/aligned.h
+/usr/include/aircrack-ng/ce-wpa/arch.h
+/usr/include/aircrack-ng/ce-wpa/crypto_engine.h
+/usr/include/aircrack-ng/ce-wpa/jcommon.h
+/usr/include/aircrack-ng/ce-wpa/johnswap.h
+/usr/include/aircrack-ng/ce-wpa/memory.h
+/usr/include/aircrack-ng/ce-wpa/misc.h
+/usr/include/aircrack-ng/ce-wpa/pseudo_intrinsics.h
+/usr/include/aircrack-ng/ce-wpa/simd-intrinsics-load-flags.h
+/usr/include/aircrack-ng/ce-wpa/simd-intrinsics.h
+/usr/include/aircrack-ng/ce-wpa/wpapsk.h
+/usr/include/aircrack-ng/cowpatty/cowpatty.h
+/usr/include/aircrack-ng/cpu/cpuset.h
+/usr/include/aircrack-ng/cpu/simd_cpuid.h
+/usr/include/aircrack-ng/cpu/trampoline.h
+/usr/include/aircrack-ng/crypto/crctable.h
+/usr/include/aircrack-ng/crypto/crypto.h
+/usr/include/aircrack-ng/crypto/gcrypt-openssl-wrapper.h
+/usr/include/aircrack-ng/crypto/sha1-git.h
+/usr/include/aircrack-ng/crypto/sha1-sse2.h
+/usr/include/aircrack-ng/osdep/byteorder.h
+/usr/include/aircrack-ng/osdep/channel.h
+/usr/include/aircrack-ng/osdep/common.h
+/usr/include/aircrack-ng/osdep/network.h
+/usr/include/aircrack-ng/osdep/osdep.h
+/usr/include/aircrack-ng/osdep/packed.h
+/usr/include/aircrack-ng/ptw/aircrack-ptw-lib.h
+/usr/include/aircrack-ng/support/common.h
+/usr/include/aircrack-ng/support/communications.h
+/usr/include/aircrack-ng/support/crypto_engine_loader.h
+/usr/include/aircrack-ng/support/fragments.h
+/usr/include/aircrack-ng/support/mcs_index_rates.h
+/usr/include/aircrack-ng/support/pcap_local.h
+/usr/include/aircrack-ng/support/station.h
+/usr/include/aircrack-ng/third-party/eapol.h
+/usr/include/aircrack-ng/third-party/ethernet.h
+/usr/include/aircrack-ng/third-party/hashcat.h
+/usr/include/aircrack-ng/third-party/ieee80211.h
+/usr/include/aircrack-ng/third-party/if_arp.h
+/usr/include/aircrack-ng/third-party/if_llc.h
+/usr/include/aircrack-ng/tui/console.h
+/usr/include/aircrack-ng/utf8/verifyssid.h
+/usr/share/applications/kali-aircrack-ng.desktop
+/usr/share/doc/aircrack-ng
+/usr/share/doc/aircrack-ng/README.Debian
+/usr/share/doc/aircrack-ng/README.gz
+/usr/share/doc/aircrack-ng/changelog.Debian.gz
+/usr/share/doc/aircrack-ng/changelog.gz
+/usr/share/doc/aircrack-ng/copyright
+/usr/share/icons/Flat-Remix-Blue-Dark/apps/scalable/aircrack-ng.svg
+/usr/share/icons/Flat-Remix-Blue-Dark/apps/scalable/kali-aircrack-ng.svg
+/usr/share/icons/hicolor/16x16/apps/kali-aircrack-ng.png
+/usr/share/icons/hicolor/22x22/apps/kali-aircrack-ng.png
+/usr/share/icons/hicolor/24x24/apps/kali-aircrack-ng.png
+/usr/share/icons/hicolor/256x256/apps/kali-aircrack-ng.png
+/usr/share/icons/hicolor/32x32/apps/kali-aircrack-ng.png
+/usr/share/icons/hicolor/48x48/apps/kali-aircrack-ng.png
+/usr/share/icons/hicolor/scalable/apps/kali-aircrack-ng.svg
+/usr/share/kali-menu/applications/kali-aircrack-ng.desktop
+/usr/share/man/man1/aircrack-ng.1.gz
+/var/lib/dpkg/info/aircrack-ng.list
+/var/lib/dpkg/info/aircrack-ng.md5sums
+/var/lib/dpkg/info/aircrack-ng.shlibs
+/var/lib/dpkg/info/aircrack-ng.triggers
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# whereis aircrack-ng
+aircrack-ng: /usr/bin/aircrack-ng /usr/include/aircrack-ng /usr/share/man/man1/aircrack-ng.1.gz
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# which aircrack-ng  
+/usr/bin/aircrack-ng
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# find / -type f -name apache2
+find: ‘/run/user/1000/gvfs’: Permission denied
+/usr/sbin/apache2
+/usr/lib/php/8.1/sapi/apache2
+/usr/share/lintian/overrides/apache2
+/etc/cron.daily/apache2
+/etc/init.d/apache2
+/etc/logrotate.d/apache2
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# find /etc -type f -name apache2
+/etc/cron.daily/apache2
+/etc/init.d/apache2
+/etc/logrotate.d/apache2
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# find /etc -type f -name apache2.
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# find /etc -type f -name apache2.*
+/etc/apache2/apache2.conf
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.4 102300  9920 ?        Ss   14:10   0:00 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    14:10   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   14:10   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   14:10   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   14:10   0:00 [netns]
+root           7  0.0  0.0      0     0 ?        I<   14:10   0:00 [kworker/0:0H-events_highpri]
+root           9  0.0  0.0      0     0 ?        I<   14:10   0:00 [kworker/0:1H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   14:10   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        I    14:10   0:00 [rcu_tasks_kthread]
+root          12  0.0  0.0      0     0 ?        I    14:10   0:00 [rcu_tasks_rude_kthread]
+root          13  0.0  0.0      0     0 ?        I    14:10   0:00 [rcu_tasks_trace_kthread]
+root          14  0.0  0.0      0     0 ?        S    14:10   0:00 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    14:10   0:00 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    14:10   0:00 [migration/0]
+root          18  0.0  0.0      0     0 ?        S    14:10   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    14:10   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    14:10   0:00 [migration/1]
+root          21  0.0  0.0      0     0 ?        S    14:10   0:00 [ksoftirqd/1]
+root          23  0.0  0.0      0     0 ?        I<   14:10   0:00 [kworker/1:0H-events_highpri]
+root          26  0.0  0.0      0     0 ?        S    14:10   0:00 [kdevtmpfs]
+root          27  0.0  0.0      0     0 ?        I<   14:10   0:00 [inet_frag_wq]
+root          28  0.0  0.0      0     0 ?        S    14:10   0:00 [kauditd]
+root          29  0.0  0.0      0     0 ?        S    14:10   0:00 [khungtaskd]
+root          30  0.0  0.0      0     0 ?        S    14:10   0:00 [oom_reaper]
+root          31  0.0  0.0      0     0 ?        I<   14:10   0:00 [writeback]
+root          32  0.0  0.0      0     0 ?        S    14:10   0:00 [kcompactd0]
+root          33  0.0  0.0      0     0 ?        SN   14:10   0:00 [ksmd]
+root          34  0.0  0.0      0     0 ?        SN   14:10   0:00 [khugepaged]
+root          35  0.0  0.0      0     0 ?        I<   14:10   0:00 [kintegrityd]
+root          36  0.0  0.0      0     0 ?        I<   14:10   0:00 [kblockd]
+root          37  0.0  0.0      0     0 ?        I<   14:10   0:00 [blkcg_punt_bio]
+root          38  0.0  0.0      0     0 ?        I<   14:10   0:00 [tpm_dev_wq]
+root          39  0.0  0.0      0     0 ?        I<   14:10   0:00 [edac-poller]
+root          40  0.0  0.0      0     0 ?        I<   14:10   0:00 [devfreq_wq]
+root          42  0.0  0.0      0     0 ?        I<   14:10   0:00 [kworker/1:1H-events_highpri]
+root          43  0.0  0.0      0     0 ?        S    14:10   0:00 [kswapd0]
+root          50  0.0  0.0      0     0 ?        I<   14:10   0:00 [kthrotld]
+root          52  0.0  0.0      0     0 ?        I<   14:10   0:00 [acpi_thermal_pm]
+root          53  0.0  0.0      0     0 ?        I<   14:10   0:00 [mld]
+root          54  0.0  0.0      0     0 ?        I<   14:10   0:00 [ipv6_addrconf]
+root          59  0.0  0.0      0     0 ?        I<   14:10   0:00 [kstrp]
+root          64  0.0  0.0      0     0 ?        I<   14:10   0:00 [zswap-shrink]
+root          65  0.0  0.0      0     0 ?        I<   14:10   0:00 [kworker/u5:0]
+root         130  0.0  0.0      0     0 ?        I<   14:10   0:00 [ata_sff]
+root         132  0.0  0.0      0     0 ?        S    14:10   0:00 [scsi_eh_0]
+root         133  0.0  0.0      0     0 ?        S    14:10   0:00 [scsi_eh_1]
+root         134  0.0  0.0      0     0 ?        I<   14:10   0:00 [cryptd]
+root         135  0.0  0.0      0     0 ?        I<   14:10   0:00 [scsi_tmf_0]
+root         138  0.0  0.0      0     0 ?        I<   14:10   0:00 [scsi_tmf_1]
+root         139  0.0  0.0      0     0 ?        S    14:10   0:00 [irq/18-vmwgfx]
+root         140  0.0  0.0      0     0 ?        S    14:10   0:00 [scsi_eh_2]
+root         141  0.0  0.0      0     0 ?        S    14:10   0:00 [card0-crtc0]
+root         142  0.0  0.0      0     0 ?        I<   14:10   0:00 [scsi_tmf_2]
+root         144  0.0  0.0      0     0 ?        S    14:10   0:00 [card0-crtc1]
+root         145  0.0  0.0      0     0 ?        S    14:10   0:00 [card0-crtc2]
+root         148  0.0  0.0      0     0 ?        S    14:10   0:00 [card0-crtc3]
+root         150  0.0  0.0      0     0 ?        S    14:10   0:00 [card0-crtc4]
+root         151  0.0  0.0      0     0 ?        S    14:10   0:00 [card0-crtc5]
+root         152  0.0  0.0      0     0 ?        S    14:10   0:00 [card0-crtc6]
+root         153  0.0  0.0      0     0 ?        S    14:10   0:00 [card0-crtc7]
+root         245  0.0  0.0      0     0 ?        S    14:10   0:00 [jbd2/sda1-8]
+root         246  0.0  0.0      0     0 ?        I<   14:10   0:00 [ext4-rsv-conver]
+root         296  0.0  0.6  49956 13456 ?        Ss   14:10   0:00 /lib/systemd/systemd-journald
+root         322  0.0  0.2  25992  4864 ?        Ss   14:10   0:00 /lib/systemd/systemd-udevd
+root         342  0.0  0.2   8228  5960 ?        Ss   14:10   0:00 /usr/sbin/haveged --Foreground --verbose=1
+message+     408  0.0  0.2  11068  5336 ?        Ss   14:10   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         410  0.0  0.4 237016  8236 ?        Ssl  14:10   0:00 /usr/libexec/polkitd --no-debug
+root         411  0.0  0.2 222368  5644 ?        Ssl  14:10   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         412  0.0  0.3  25796  6280 ?        Ss   14:10   0:00 /lib/systemd/systemd-logind
+root         453  0.0  0.7 259336 15344 ?        Ssl  14:10   0:00 /usr/sbin/NetworkManager --no-daemon
+root         476  0.0  0.4 317500  8892 ?        Ssl  14:10   0:00 /usr/sbin/ModemManager
+root         535  0.0  0.1 294172  2544 ?        Sl   14:10   0:00 /usr/sbin/VBoxService
+root         590  0.0  0.0      0     0 ?        I<   14:10   0:00 [rpciod]
+root         591  0.0  0.0      0     0 ?        I<   14:10   0:00 [xprtiod]
+root         592  0.0  0.1   6808  2688 ?        Ss   14:10   0:00 /usr/sbin/cron -f
+root         594  0.0  0.2 236164  5204 ?        SLsl 14:10   0:00 /usr/sbin/lightdm
+root         602  0.0  0.0   5820   732 tty1     Ss+  14:10   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         603  1.4 10.0 726784 203044 tty7    Ssl+ 14:10   0:33 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+rtkit        636  0.0  0.1 153944  2824 ?        SNsl 14:10   0:00 /usr/libexec/rtkit-daemon
+root         740  0.0  0.2 163668  5204 ?        Sl   14:11   0:00 lightdm --session-child 14 23
+kali         745  0.0  0.4  19452  8188 ?        Ss   14:11   0:00 /lib/systemd/systemd --user
+kali         746  0.0  0.1 103556  2524 ?        S    14:11   0:00 (sd-pam)
+kali         761  0.0  0.2  36956  4500 ?        S<sl 14:11   0:00 /usr/bin/pipewire
+kali         762  0.0  0.1  20668  4008 ?        Ssl  14:11   0:00 /usr/bin/pipewire-media-session
+kali         763  0.0  0.9 652120 19864 ?        S<sl 14:11   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+kali         765  0.0  0.4 240904  9428 ?        SLsl 14:11   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+kali         766  0.0  0.2  10208  4952 ?        Ss   14:11   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+kali         772  0.0  1.4 532720 29244 ?        Ssl  14:11   0:00 xfce4-session
+kali         829  0.0  0.0  20248    36 ?        S    14:11   0:00 /usr/bin/VBoxClient --clipboard
+kali         831  0.0  0.1 152516  3448 ?        Sl   14:11   0:00 /usr/bin/VBoxClient --clipboard
+kali         842  0.0  0.0  20248    20 ?        S    14:11   0:00 /usr/bin/VBoxClient --seamless
+kali         843  0.0  0.0 152484  1768 ?        Sl   14:11   0:00 /usr/bin/VBoxClient --seamless
+kali         849  0.0  0.0  20248     8 ?        S    14:11   0:00 /usr/bin/VBoxClient --draganddrop
+kali         850  0.0  0.0 153000  1524 ?        Sl   14:11   0:01 /usr/bin/VBoxClient --draganddrop
+kali         853  0.0  0.0  20248     4 ?        S    14:11   0:00 /usr/bin/VBoxClient --vmsvga
+kali         854  0.0  0.1 152728  2320 ?        Sl   14:11   0:00 /usr/bin/VBoxClient --vmsvga
+kali         860  0.0  0.0   8008    32 ?        Ss   14:11   0:00 /usr/bin/ssh-agent x-session-manager
+kali         871  0.0  0.2 312220  5964 ?        Ssl  14:11   0:00 /usr/libexec/at-spi-bus-launcher
+kali         877  0.0  0.1   9880  3972 ?        S    14:11   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/
+kali         881  0.0  0.2 231584  5436 ?        Sl   14:11   0:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+kali         887  0.0  0.5 165520 10484 ?        Sl   14:11   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+kali         897  0.0  0.1  81320  2316 ?        SLs  14:11   0:00 /usr/bin/gpg-agent --supervised
+kali         899  0.2  2.3 933560 48076 ?        Sl   14:11   0:05 xfwm4 --display :0.0 --sm-client-id 2bd9302f2-f902-4f36-9dd0-05482f599ca5
+kali         902  0.0  0.2 238672  5620 ?        Ssl  14:11   0:00 /usr/libexec/gvfsd
+kali         907  0.0  0.3 381508  7276 ?        Sl   14:11   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+kali         924  0.0  0.7 231568 14976 ?        Sl   14:11   0:00 xfsettingsd --display :0.0 --sm-client-id 2d7a72b89-f19f-466d-9b88-7b6298750a7d
+root         927  0.0  0.3 234860  7552 ?        Ssl  14:11   0:00 /usr/libexec/upowerd
+kali         932  0.0  1.2 410632 25524 ?        Sl   14:11   0:00 xfce4-panel --display :0.0 --sm-client-id 2e8fa0f9a-e500-4ecf-b6fe-b43ac01bef59
+kali         936  0.0  0.6 342176 14104 ?        Sl   14:11   0:00 Thunar --sm-client-id 2f3b3a69a-7153-45ea-98f7-0fb0c4786537 --daemon
+kali         941  0.0  2.0 599428 40808 ?        Sl   14:11   0:01 xfdesktop --display :0.0 --sm-client-id 2cf00a58b-621a-43bd-9435-c551e3302e62
+kali         944  0.0  0.8 392652 16560 ?        Sl   14:11   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 27262983 whiskermen
+kali         947  0.3  1.0 205024 21540 ?        Sl   14:11   0:07 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libcpugraph.so 13 27262984 cpugraph CPU
+kali         948  0.0  0.6 341156 13516 ?        Sl   14:11   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 14 27262985 systray Statu
+kali         949  0.1  0.8 359152 17092 ?        Sl   14:11   0:04 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libgenmon.so 15 27262986 genmon Generic
+kali         950  0.0  1.0 594220 20688 ?        Sl   14:11   0:01 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 16 27262987 pul
+kali         951  0.0  0.6 326144 12920 ?        Sl   14:11   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 17 27262988 n
+kali         952  0.0  0.5 326160 11048 ?        Sl   14:11   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 18 27262989 pow
+kali         958  0.0  0.6 334240 13304 ?        Sl   14:11   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libactions.so 22 27262990 actions Actio
+kali         984  0.0  0.6 262052 12280 ?        Ssl  14:11   0:00 /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+kali        1004  0.0  0.3 188296  7968 ?        Sl   14:11   0:00 xfce4-power-manager --restart --sm-client-id 2a05d0fe7-5d4d-47ff-a9ef-3af9f0a25176
+kali        1011  0.0  0.6 432772 12536 ?        Sl   14:11   0:00 light-locker
+kali        1015  0.0  0.2 851304  5764 ?        Sl   14:11   0:00 xiccd
+kali        1027  0.0  0.2 157468  5132 ?        Ssl  14:11   0:00 /usr/libexec/dconf-service
+kali        1030  0.0  0.1 235164  3700 ?        Sl   14:11   0:00 /usr/libexec/geoclue-2.0/demos/agent
+kali        1035  0.0  1.0 374812 20744 ?        Sl   14:11   0:00 /usr/bin/python3 /usr/bin/blueman-applet
+colord      1045  0.0  0.5 243568 10572 ?        Ssl  14:11   0:00 /usr/libexec/colord
+kali        1052  0.0  0.3 187284  7920 ?        Sl   14:11   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+kali        1057  0.0  0.6 559424 13192 ?        Sl   14:11   0:00 nm-applet
+kali        1058  0.0  0.0  14764  1392 ?        Ssl  14:11   0:00 xcape -e Super_L Control_L Escape
+kali        1089  0.0  0.5 351832 10336 ?        Ssl  14:11   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+root        1093  0.0  0.6 395784 12240 ?        Ssl  14:11   0:00 /usr/libexec/udisks2/udisksd
+kali        1111  0.0  0.3 313532  7536 ?        Ssl  14:11   0:00 /usr/libexec/gvfs-afc-volume-monitor
+kali        1116  0.0  0.3 234468  7268 ?        Ssl  14:11   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+kali        1120  0.0  0.3 235424  7624 ?        Ssl  14:11   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+kali        1126  0.0  0.3 234644  7392 ?        Ssl  14:11   0:00 /usr/libexec/gvfs-goa-volume-monitor
+kali        1135  0.0  0.4 312652  8408 ?        Sl   14:11   0:00 /usr/libexec/gvfsd-trash --spawner :1.17 /org/gtk/gvfs/exec_spaw/0
+kali        1140  0.0  0.3 160928  7036 ?        Ssl  14:11   0:00 /usr/libexec/gvfsd-metadata
+kali        1149  0.0  0.2  48024  4528 ?        Ss   14:11   0:00 /usr/libexec/bluetooth/obexd
+root        6609  0.0  0.0      0     0 ?        I    14:33   0:00 [kworker/u4:2-flush-8:0]
+root        7074  0.0  0.0      0     0 ?        I    14:34   0:00 [kworker/u4:3-events_unbound]
+root        7628  0.0  0.0      0     0 ?        I    14:35   0:00 [kworker/0:2-events]
+root        7629  0.0  0.0      0     0 ?        I    14:35   0:00 [kworker/0:4-events]
+root        7631  0.0  0.0      0     0 ?        I    14:35   0:00 [kworker/1:3-ata_sff]
+kali        7734  0.4  2.7 561728 56072 ?        Sl   14:36   0:03 mousepad
+kali        7830  1.3 18.4 2994760 374684 ?      Sl   14:36   0:11 x-www-browser https://uwwtw.instructure.com/courses/497235/pages/multimedia-1?module_item_id=14869143
+kali        7894  0.9 12.7 2836780 259620 ?      Sl   14:36   0:07 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 237476 -jsInit 285636 -parentBuildID 20
+kali        7936  0.0  4.7 2407288 95940 ?       Sl   14:36   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 2 -isForBrowser -prefsLen 5291 -prefMapSize 237476 -jsInit 285636 -parentBuildID
+kali        7997  0.0  5.6 2409292 113628 ?      Sl   14:36   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 3 -isForBrowser -prefsLen 7292 -prefMapSize 237476 -jsInit 285636 -parentBuildID
+kali        8022  0.7 12.1 2857920 247180 ?      Sl   14:36   0:06 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 4 -isForBrowser -prefsLen 7448 -prefMapSize 237476 -jsInit 285636 -parentBuildID
+kali        8114  0.0  1.5 200904 31084 ?        Sl   14:36   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -parentBuildID 20220623065118 -prefsLen 7590 -prefMapSize 237476 -appdir /usr/lib/firefox
+kali        8297  0.0  3.4 2380460 70448 ?       Sl   14:37   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 5 -isForBrowser -prefsLen 7708 -prefMapSize 237476 -jsInit 285636 -parentBuildID
+root        9426  0.0  0.0      0     0 ?        I    14:41   0:00 [kworker/1:0-ata_sff]
+kali       10023  0.2  5.1 436468 104416 ?       Rl   14:42   0:01 /usr/bin/qterminal
+kali       10026  0.0  0.3  10516  6332 pts/0    Ss   14:42   0:00 /usr/bin/zsh
+root       10047  0.0  0.2  10608  4860 pts/0    S+   14:42   0:00 sudo su
+root       10061  0.0  0.0  10608   552 pts/1    Ss   14:42   0:00 sudo su
+root       10062  0.0  0.2   9648  4312 pts/1    S    14:42   0:00 su
+root       10066  0.2  0.3  10612  6468 pts/1    S    14:42   0:01 zsh
+root       11105  0.0  0.0      0     0 ?        I    14:46   0:00 [kworker/1:1-events]
+root       11786  0.0  0.0      0     0 ?        I    14:48   0:00 [kworker/u4:0-events_unbound]
+root       12181  0.0  0.1   9988  3508 pts/1    R+   14:50   0:00 ps aux
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ps aux | grep apache2
+root       12288  0.0  0.1   6300  2276 pts/1    S+   14:50   0:00 grep --color=auto apache2
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat > hackingskills
+Hacking is the most valuable skill set of the 21st century!
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat hackingskills  
+Hacking is the most valuable skill set of the 21st century!
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat >> hackingskills
+Everyone should learn hacking                 
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat hackingskills   
+Hacking is the most valuable skill set of the 21st century!
+Everyone should learn hacking
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat > hackingskills 
+Everyone in IT security without hacking skills is in the dark
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat hackingskills  
+Everyone in IT security without hacking skills is in the dark
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# touch newfile
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ls -l             
+total 1048652
+-rw-r--r--   1 root root          0 Aug  8 06:08 0
+lrwxrwxrwx   1 root root          7 Aug  8 06:02 bin -> usr/bin
+drwxr-xr-x   3 root root       4096 Aug  8 06:28 boot
+drwxr-xr-x  17 root root       3200 Sep 13 14:22 dev
+drwxr-xr-x 167 root root      12288 Sep 13 14:10 etc
+-rw-r--r--   1 root root         62 Sep 13 14:55 hackingskills
+drwxr-xr-x   3 root root       4096 Aug  8 06:10 home
+lrwxrwxrwx   1 root root         34 Aug  8 06:28 initrd.img -> boot/initrd.img-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root         34 Aug  8 06:28 initrd.img.old -> boot/initrd.img-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root          7 Aug  8 06:02 lib -> usr/lib
+lrwxrwxrwx   1 root root          9 Aug  8 06:02 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root          9 Aug  8 06:02 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root         10 Aug  8 06:02 libx32 -> usr/libx32
+drwx------   2 root root      16384 Aug  8 06:26 lost+found
+drwxr-xr-x   2 root root       4096 Aug  8 06:02 media
+drwxr-xr-x   2 root root       4096 Aug  8 06:02 mnt
+-rw-r--r--   1 root root          0 Sep 13 14:55 newfile
+drwxr-xr-x   3 root root       4096 Aug  8 06:07 opt
+dr-xr-xr-x 219 root root          0 Sep 13 14:10 proc
+drwx------   3 root root       4096 Sep 13 14:45 root
+drwxr-xr-x  31 root root        780 Sep 13 14:11 run
+lrwxrwxrwx   1 root root          8 Aug  8 06:02 sbin -> usr/sbin
+drwxr-xr-x   3 root root       4096 Aug  8 06:08 srv
+-rw-------   1 root root 1073741824 Aug  8 06:27 swapfile
+dr-xr-xr-x  13 root root          0 Sep 13 14:10 sys
+drwxrwxrwt  13 root root       4096 Sep 13 14:41 tmp
+drwxr-xr-x  16 root root       4096 Aug  8 06:05 usr
+drwxr-xr-x  12 root root       4096 Aug  8 06:05 var
+lrwxrwxrwx   1 root root         31 Aug  8 06:28 vmlinuz -> boot/vmlinuz-5.18.0-kali5-amd64
+lrwxrwxrwx   1 root root         31 Aug  8 06:28 vmlinuz.old -> boot/vmlinuz-5.18.0-kali5-amd64
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# mkdir newdirectory 
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cd newdirectory  
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# touch oldfile
+                                                                                                                                                                                                                                                                                                                                                                        
+┌──(root㉿kali)-[/newdirectory]
+└─# ls   
+oldfile
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# pwd                  
+/newdirectory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# cp oldfile /newdirectory/newfile      
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# ls
+newfile  oldfile
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# cd ..                           
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cp oldfile /root/newdirectory/newfile2  
+cp: cannot stat 'oldfile': No such file or directory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cd newdirectory                       
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# ls
+newfile  oldfile
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# mv newfile newfile2
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# ls
+newfile2  oldfile
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# rm newfile2
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# ls
+oldfile
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# rmdir newdirectory
+rmdir: failed to remove 'newdirectory': No such file or directory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# rm -r newdirectory
+rm: cannot remove 'newdirectory': No such file or directory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/newdirectory]
+└─# cd ..          
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# rm -r newdirectory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ls
+0    boot  etc            home        initrd.img.old  lib32  libx32      media  newfile  proc  run   srv       sys  usr  vmlinuz
+bin  dev   hackingskills  initrd.img  lib             lib64  lost+found  mnt    opt      root  sbin  swapfile  tmp  var  vmlinuz.old
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cd newdirectory
+cd: no such file or directory: newdirectory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cd home        
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/home]
+└─# pwd
+/home
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/home]
+└─# cd ..  
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# whoami           
+root
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# locate wordlists  
+/var/lib/plocate/plocate.db: No such file or directory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# whereis wordlists  
+wordlists: /usr/bin/wordlists /usr/share/wordlists
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# sudo updatedb 
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# locate wordlists
+/etc/theHarvester/wordlists
+/etc/theHarvester/wordlists/dns-big.txt
+/etc/theHarvester/wordlists/dns-names.txt
+/etc/theHarvester/wordlists/dorks.txt
+/etc/theHarvester/wordlists/general
+/etc/theHarvester/wordlists/names_small.txt
+/etc/theHarvester/wordlists/general/common.txt
+/usr/bin/wordlists
+/usr/lib/python3/dist-packages/theHarvester/wordlists
+/usr/share/wordlists
+/usr/share/amass/wordlists
+/usr/share/amass/wordlists/all.txt
+/usr/share/amass/wordlists/bitquark_subdomains_top100K.txt
+/usr/share/amass/wordlists/deepmagic.com_top500prefixes.txt
+/usr/share/amass/wordlists/deepmagic.com_top50kprefixes.txt
+/usr/share/amass/wordlists/fierce_hostlist.txt
+/usr/share/amass/wordlists/jhaddix_all.txt
+/usr/share/amass/wordlists/sorted_knock_dnsrecon_fierce_recon-ng.txt
+/usr/share/amass/wordlists/subdomains-top1mil-110000.txt
+/usr/share/amass/wordlists/subdomains-top1mil-20000.txt
+/usr/share/amass/wordlists/subdomains-top1mil-5000.txt
+/usr/share/amass/wordlists/subdomains.lst
+/usr/share/applications/kali-wordlists.desktop
+/usr/share/dirb/wordlists
+/usr/share/dirb/wordlists/big.txt
+/usr/share/dirb/wordlists/catala.txt
+/usr/share/dirb/wordlists/common.txt
+/usr/share/dirb/wordlists/euskera.txt
+/usr/share/dirb/wordlists/extensions_common.txt
+/usr/share/dirb/wordlists/indexes.txt
+/usr/share/dirb/wordlists/mutations_common.txt
+/usr/share/dirb/wordlists/others
+/usr/share/dirb/wordlists/small.txt
+/usr/share/dirb/wordlists/spanish.txt
+/usr/share/dirb/wordlists/stress
+/usr/share/dirb/wordlists/vulns
+/usr/share/dirb/wordlists/others/best1050.txt
+/usr/share/dirb/wordlists/others/best110.txt
+/usr/share/dirb/wordlists/others/best15.txt
+/usr/share/dirb/wordlists/others/names.txt
+/usr/share/dirb/wordlists/stress/alphanum_case.txt
+/usr/share/dirb/wordlists/stress/alphanum_case_extra.txt
+/usr/share/dirb/wordlists/stress/char.txt
+/usr/share/dirb/wordlists/stress/doble_uri_hex.txt
+/usr/share/dirb/wordlists/stress/test_ext.txt
+/usr/share/dirb/wordlists/stress/unicode.txt
+/usr/share/dirb/wordlists/stress/uri_hex.txt
+/usr/share/dirb/wordlists/vulns/apache.txt
+/usr/share/dirb/wordlists/vulns/axis.txt
+/usr/share/dirb/wordlists/vulns/cgis.txt
+/usr/share/dirb/wordlists/vulns/coldfusion.txt
+/usr/share/dirb/wordlists/vulns/domino.txt
+/usr/share/dirb/wordlists/vulns/fatwire.txt
+/usr/share/dirb/wordlists/vulns/fatwire_pagenames.txt
+/usr/share/dirb/wordlists/vulns/frontpage.txt
+/usr/share/dirb/wordlists/vulns/hpsmh.txt
+/usr/share/dirb/wordlists/vulns/hyperion.txt
+/usr/share/dirb/wordlists/vulns/iis.txt
+/usr/share/dirb/wordlists/vulns/iplanet.txt
+/usr/share/dirb/wordlists/vulns/jboss.txt
+/usr/share/dirb/wordlists/vulns/jersey.txt
+/usr/share/dirb/wordlists/vulns/jrun.txt
+/usr/share/dirb/wordlists/vulns/netware.txt
+/usr/share/dirb/wordlists/vulns/oracle.txt
+/usr/share/dirb/wordlists/vulns/ror.txt
+/usr/share/dirb/wordlists/vulns/sap.txt
+/usr/share/dirb/wordlists/vulns/sharepoint.txt
+/usr/share/dirb/wordlists/vulns/sunas.txt
+/usr/share/dirb/wordlists/vulns/tests.txt
+/usr/share/dirb/wordlists/vulns/tomcat.txt
+/usr/share/dirb/wordlists/vulns/vignette.txt
+/usr/share/dirb/wordlists/vulns/weblogic.txt
+/usr/share/dirb/wordlists/vulns/websphere.txt
+/usr/share/dirbuster/wordlists
+/usr/share/dirbuster/wordlists/apache-user-enum-1.0.txt
+/usr/share/dirbuster/wordlists/apache-user-enum-2.0.txt
+/usr/share/dirbuster/wordlists/directories.jbrofuzz
+/usr/share/dirbuster/wordlists/directory-list-1.0.txt
+/usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+/usr/share/dirbuster/wordlists/directory-list-2.3-small.txt
+/usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-medium.txt
+/usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-small.txt
+/usr/share/doc/wordlists
+/usr/share/doc/wordlists/changelog.gz
+/usr/share/doc/wordlists/copyright
+/usr/share/fern-wifi-cracker/extras/wordlists
+/usr/share/fern-wifi-cracker/extras/wordlists/common.txt
+/usr/share/icons/Flat-Remix-Blue-Dark/apps/scalable/kali-wordlists.svg
+/usr/share/icons/Flat-Remix-Blue-Dark/apps/scalable/wordlists.svg
+/usr/share/icons/hicolor/16x16/apps/kali-wordlists.png
+/usr/share/icons/hicolor/22x22/apps/kali-wordlists.png
+/usr/share/icons/hicolor/24x24/apps/kali-wordlists.png
+/usr/share/icons/hicolor/256x256/apps/kali-wordlists.png
+/usr/share/icons/hicolor/32x32/apps/kali-wordlists.png
+/usr/share/icons/hicolor/48x48/apps/kali-wordlists.png
+/usr/share/icons/hicolor/scalable/apps/kali-wordlists.svg
+/usr/share/kali-menu/applications/kali-wordlists.desktop
+/usr/share/legion/wordlists
+/usr/share/legion/wordlists/db2-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/ftp-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/gvit_subdomain_wordlist.txt
+/usr/share/legion/wordlists/mssql-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/mysql-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/oracle-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/postgres-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/root-userpass.txt
+/usr/share/legion/wordlists/routers-userpass.txt
+/usr/share/legion/wordlists/snmp-default.txt
+/usr/share/legion/wordlists/ssh-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/ssh-password.txt
+/usr/share/legion/wordlists/ssh-user.txt
+/usr/share/legion/wordlists/telnet-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/tomcat-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/vnc-betterdefaultpasslist.txt
+/usr/share/legion/wordlists/windows-betterdefaultpasslist.txt
+/usr/share/metasploit-framework/data/wordlists
+/usr/share/metasploit-framework/data/wordlists/adobe_top100_pass.txt
+/usr/share/metasploit-framework/data/wordlists/av-update-urls.txt
+/usr/share/metasploit-framework/data/wordlists/av_hips_executables.txt
+/usr/share/metasploit-framework/data/wordlists/burnett_top_1024.txt
+/usr/share/metasploit-framework/data/wordlists/burnett_top_500.txt
+/usr/share/metasploit-framework/data/wordlists/can_flood_frames.txt
+/usr/share/metasploit-framework/data/wordlists/cms400net_default_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/common_roots.txt
+/usr/share/metasploit-framework/data/wordlists/dangerzone_a.txt
+/usr/share/metasploit-framework/data/wordlists/dangerzone_b.txt
+/usr/share/metasploit-framework/data/wordlists/db2_default_pass.txt
+/usr/share/metasploit-framework/data/wordlists/db2_default_user.txt
+/usr/share/metasploit-framework/data/wordlists/db2_default_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/default_pass_for_services_unhash.txt
+/usr/share/metasploit-framework/data/wordlists/default_userpass_for_services_unhash.txt
+/usr/share/metasploit-framework/data/wordlists/default_users_for_services_unhash.txt
+/usr/share/metasploit-framework/data/wordlists/dlink_telnet_backdoor_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/grafana_plugins.txt
+/usr/share/metasploit-framework/data/wordlists/hci_oracle_passwords.csv
+/usr/share/metasploit-framework/data/wordlists/http_default_pass.txt
+/usr/share/metasploit-framework/data/wordlists/http_default_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/http_default_users.txt
+/usr/share/metasploit-framework/data/wordlists/http_owa_common.txt
+/usr/share/metasploit-framework/data/wordlists/idrac_default_pass.txt
+/usr/share/metasploit-framework/data/wordlists/idrac_default_user.txt
+/usr/share/metasploit-framework/data/wordlists/ipmi_passwords.txt
+/usr/share/metasploit-framework/data/wordlists/ipmi_users.txt
+/usr/share/metasploit-framework/data/wordlists/joomla.txt
+/usr/share/metasploit-framework/data/wordlists/keyboard-patterns.txt
+/usr/share/metasploit-framework/data/wordlists/lync_subdomains.txt
+/usr/share/metasploit-framework/data/wordlists/malicious_urls.txt
+/usr/share/metasploit-framework/data/wordlists/mirai_pass.txt
+/usr/share/metasploit-framework/data/wordlists/mirai_user.txt
+/usr/share/metasploit-framework/data/wordlists/mirai_user_pass.txt
+/usr/share/metasploit-framework/data/wordlists/multi_vendor_cctv_dvr_pass.txt
+/usr/share/metasploit-framework/data/wordlists/multi_vendor_cctv_dvr_users.txt
+/usr/share/metasploit-framework/data/wordlists/named_pipes.txt
+/usr/share/metasploit-framework/data/wordlists/namelist.txt
+/usr/share/metasploit-framework/data/wordlists/oracle_default_hashes.txt
+/usr/share/metasploit-framework/data/wordlists/oracle_default_passwords.csv
+/usr/share/metasploit-framework/data/wordlists/oracle_default_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/password.lst
+/usr/share/metasploit-framework/data/wordlists/piata_ssh_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/postgres_default_pass.txt
+/usr/share/metasploit-framework/data/wordlists/postgres_default_user.txt
+/usr/share/metasploit-framework/data/wordlists/postgres_default_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/root_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/routers_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/rpc_names.txt
+/usr/share/metasploit-framework/data/wordlists/rservices_from_users.txt
+/usr/share/metasploit-framework/data/wordlists/sap_common.txt
+/usr/share/metasploit-framework/data/wordlists/sap_default.txt
+/usr/share/metasploit-framework/data/wordlists/sap_icm_paths.txt
+/usr/share/metasploit-framework/data/wordlists/scada_default_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/sensitive_files.txt
+/usr/share/metasploit-framework/data/wordlists/sensitive_files_win.txt
+/usr/share/metasploit-framework/data/wordlists/sid.txt
+/usr/share/metasploit-framework/data/wordlists/snmp_default_pass.txt
+/usr/share/metasploit-framework/data/wordlists/telerik_ui_asp_net_ajax_versions.txt
+/usr/share/metasploit-framework/data/wordlists/telnet_cdata_ftth_backdoor_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/tftp.txt
+/usr/share/metasploit-framework/data/wordlists/tomcat_mgr_default_pass.txt
+/usr/share/metasploit-framework/data/wordlists/tomcat_mgr_default_userpass.txt
+/usr/share/metasploit-framework/data/wordlists/tomcat_mgr_default_users.txt
+/usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+/usr/share/metasploit-framework/data/wordlists/unix_users.txt
+/usr/share/metasploit-framework/data/wordlists/vnc_passwords.txt
+/usr/share/metasploit-framework/data/wordlists/vxworks_collide_20.txt
+/usr/share/metasploit-framework/data/wordlists/vxworks_common_20.txt
+/usr/share/metasploit-framework/data/wordlists/wp-exploitable-plugins.txt
+/usr/share/metasploit-framework/data/wordlists/wp-exploitable-themes.txt
+/usr/share/metasploit-framework/data/wordlists/wp-plugins.txt
+/usr/share/metasploit-framework/data/wordlists/wp-themes.txt
+/usr/share/wordlists/amass
+/usr/share/wordlists/dirb
+/usr/share/wordlists/dirbuster
+/usr/share/wordlists/fasttrack.txt
+/usr/share/wordlists/fern-wifi
+/usr/share/wordlists/john.lst
+/usr/share/wordlists/legion
+/usr/share/wordlists/metasploit
+/usr/share/wordlists/nmap.lst
+/usr/share/wordlists/rockyou.txt.gz
+/usr/share/wordlists/sqlmap.txt
+/usr/share/wordlists/wfuzz
+/usr/share/wordlists/wifite.txt
+/var/lib/dpkg/info/wordlists.list
+/var/lib/dpkg/info/wordlists.md5sums
+/var/lib/dpkg/info/wordlists.postinst
+/var/lib/dpkg/info/wordlists.prerm
+                                                                                                                                                                                                                                                                                                                                                                                                                    
+┌──(root㉿kali)-[/]
+└─# cat > filetest     
+This is a test
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat filetest  
+This is a test
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat >> filetest     
+ammending the test file
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cat filetest   
+This is a test
+ammending the test file
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# mkdir hackerdirectory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cd hackerdirectory
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/hackerdirectory]
+└─# touch hackedfile  
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/hackerdirectory]
+└─# cp hackedfile /root/secretfile        
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/hackerdirectory]
+└─# ls                            
+hackedfile
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/hackerdirectory]
+└─# cd ..                         
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ls
+0    boot  etc       hackerdirectory  home        initrd.img.old  lib32  libx32      media  newfile  proc  run   srv       sys  usr  vmlinuz
+bin  dev   filetest  hackingskills    initrd.img  lib             lib64  lost+found  mnt    opt      root  sbin  swapfile  tmp  var  vmlinuz.old
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cd root
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[~]
+└─# ls
+secretfile
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[~]
+└─# cd /   
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# pwd
+/
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# home              
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/home]
+└─# cd /
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# ls
+0    boot  etc       hackerdirectory  home        initrd.img.old  lib32  libx32      media  newfile  proc  run   srv       sys  usr  vmlinuz
+bin  dev   filetest  hackingskills    initrd.img  lib             lib64  lost+found  mnt    opt      root  sbin  swapfile  tmp  var  vmlinuz.old
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[/]
+└─# cd /root
+                                                                                                                                                                                                          
+┌──(root㉿kali)-[~]
+└─# ls
+secretfile
+                                                                                                                                                                                                          
+
